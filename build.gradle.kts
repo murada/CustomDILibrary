@@ -5,8 +5,8 @@ plugins {
     `maven-publish`
 }
 
-group = "com.atom-groups"
-version = "1.0-SNAPSHOT"
+group = "com.github.murada"
+version = "1.0.0"
 
 repositories {
     mavenCentral()
