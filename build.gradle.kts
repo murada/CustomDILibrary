@@ -6,7 +6,6 @@ plugins {
 }
 
 group = "com.github.murada"
-version = "1.0.0"
 
 repositories {
     mavenCentral()
@@ -22,17 +21,4 @@ tasks.test {
 
 tasks.withType<KotlinCompile> {
     kotlinOptions.jvmTarget = "1.8"
-}
-
-publishing{
-    publications {
-        create<MavenPublication>("library") {
-            from(components["java"])
-        }
-    }
-    repositories {
-        maven {
-            url = uri("${buildDir}/publishing-repository")
-        }
-    }
 }
