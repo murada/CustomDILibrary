@@ -1,3 +1,5 @@
 package annotation
 
-annotation class Inject()
+@Retention(AnnotationRetention.RUNTIME)
+@Target(AnnotationTarget.FIELD,AnnotationTarget.CONSTRUCTOR)
+annotation class Inject

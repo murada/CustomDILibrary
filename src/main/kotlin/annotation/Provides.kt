@@ -1,3 +1,5 @@
 package annotation
 
-annotation class Provides()
+@Retention(AnnotationRetention.RUNTIME)
+@Target(AnnotationTarget.FUNCTION)
+annotation class Provides
